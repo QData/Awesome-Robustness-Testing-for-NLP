@@ -1,4 +1,9 @@
 # Automated-Robustness-Testing-for-NLP
+## Why is testing DNNs important?
+DNNs are modern software being deployed everywhere. Like other software these must be tested for corner cases(when the software is likely to be problematic). 
+## Why is testing DNNs hard?
+DNNs have too many parameters: too many neurons. Manually finding corner cases is too difficult. Need automated testing , i.e. generating automatically corner cases for large DNNs. 
+
 ## General Intro Position Blogs
 1. (Medium DeepMind Blog)[https://medium.com/@deepmindsafetyresearch/towards-robust-and-verified-ai-specification-testing-robust-training-and-formal-verification-69bd1bc48bdaΩ]
 ## Robustness Testing of Deep Learning Models
