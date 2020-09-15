@@ -2,9 +2,18 @@
 Differential Testing, Neuron Coverage
 # Motivation
 
+
+
 We need automated testing, i.e. finding corner cases for DNNs with large number of parameters and neurons, as they are more and more being deployed in real world environmetns, with large number 
 of unseen data points. 
-Key Questions:
+
+## Differences between a traditional program and DNNs:
+| Programs  |  DNNs |
+|---|---|
+| not differentiable  | differentiable  |
+|  written by humans | not written by humans?  |
+| not too large  |  millions of neurons and millions of parameters |
+## Key Questions:
 1. Find examples that trigger new systems of DL logic 
 2. dont need to manually check for corner cases 
 
@@ -26,3 +35,4 @@ Issue: Unaware of internal DL system, can only cover tiny fraction of all possib
 neuron coverage. 
 Number of Neurons activated or value is above a threshold. 
 2. Differential Testing: Multiple players/DNNs trained for the same task should produce the same output.
+3. Joit Optimization of finding Test Inputs to maximize neuron coverage + examples that violate the differential testing procedure 
