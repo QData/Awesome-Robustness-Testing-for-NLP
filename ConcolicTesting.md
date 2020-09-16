@@ -34,5 +34,79 @@ DR formulas are composed of
 2. e : boolean formula
 3. a : arithmetic formula 
 
-__Definition of Satisfiability of a coverage criterion r by a test suite T__
+## Definition of Satisfiability of a coverage criterion r by a test suite T
+Complexity: Given a test suite T, coverage criterion r, network N, checking if a test suite T satisfies r, takes polynomial time in size of T. 
+
+## Test Coverage Metrics
+ratio of number of satisfied criterion in R over total number of coverage criteron in R. 
+
+Definition:
+__Set of Input Spaces__
+1. These can be specified in terms of box constraints
+
+
+### Lipschitz Continuity
+1. If r_lip is true, then c can't be a lipschitz constant. as you can find samples that show a greater value as earlier you said c is the max value. 
+Defined for input layer only. 
+### Neuron Coverage
+For a given neurn, there exists a sample in the test suite for which that neuron is activated. Should be true for all neurons after input layer.  
+What about and combinations?
+### Modified Condition/ Decision Making: Sign Sign Coverage 
+Take two adjacent layers:
+take all possible neuron layers:
+there exists a pair of examples, for which the two neurons give opposite signs but the rest of the neurons shoudl remain the same. Find for all possible neurons and layers 
+### Neuron Boundary Coverage
+Two sets of bounds : upper and lower and find the ones that can violate this bound. 
+
+## Algorithm 
+The output is a test suite. 
+
+## Ranking Coverage Requirements 
+1. requirement_evaluation finds the best criterion that has not been satisfied, a heuristic to check if it is satisfied and the best example that are claosest to each other: R * N_seeds combinations 
+
+heuristic for each requirement: such that r is \delta(r) -- the extent to which an input satisfies r
+1. find argmax delta(r)--> returns a sample t, the value of the heuristic is val(delta(r), t). This delta r is max_x (maximizes an aritmentic a and also satisfies a boolean condition). So, say must be a close to real input and must maximize a loss? Like in DeepXplore, an X that maximizes coverage and difference but subject tp some constraints 
+
+
+2. search ver all r's 
+3. return that r and t 
+
+In detail, solution of min_x a:e returns a such that t \in T, T satisfies e but r(x-->t)<= r(x-->t') t' \in T. All the seed inputs satisfy these conditions
+
+### Heurositcs 
+1. Lipshitz
+FInd the pair that maximizes 
+||v_1[x_1]-v_1[x_2]|| - c*||x_1 - x_2||
+2. Neuron Coverage for a specific neuron
+-- Convert to maximum coverage additionally weighted by a layer specific constant 
+\delta(NC) = max_x (c_l \sum_unit_l activation_layer_unit_before_relu): true 
+
+Why before relu?
+3. SS Coverage for a specific neuron
+
+4. neuron Boundary coverage -- self explanatory (find one closest to boundary )
+arg max _ x (u[x] -  h_upper_boundary): true 
+arg max _ x (lower_boundary -  u[x]): true 
+what is true?
+
+
+## Symbolic Generation of Concrete Inputs 
+Input : t,r that have the most chances of success
+Three optimizataion algorithms:
+1. linear programming
+2. global optimization for l_0 norm
+3. new optmization algorithms 
+
+Traditional Symbolic analysis papers:
+
+
+
+### Linear programming
+1. For Neuron Coverage we desire a neuron to be flipped. Before this, neuron all layers must preserve the activation patterns. 
+ReLU at a point can be converted into linear model 
+2. Rest doesnt matter
+3. How can I activate a neuron if I cant change the activation pattern? Increasing value?
+
+
+
 
