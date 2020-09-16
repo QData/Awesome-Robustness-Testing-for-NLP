@@ -17,3 +17,5 @@ How to check if fuzzing is useful?
 
 ## Code Coverage enables checking quality of test input and also direct tests towards maximizing this criterion. 
 
+As seed input size in fuzz based testing would increase, the code coverage would increase. 
+
