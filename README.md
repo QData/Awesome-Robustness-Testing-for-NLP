@@ -3,12 +3,10 @@
 DNNs are modern software being deployed everywhere. Like other software these must be tested for corner cases(when the software is likely to be problematic). 
 ## Why is testing DNNs hard?
 DNNs have too many parameters: too many neurons. Manually finding corner cases is too difficult. Need automated testing , i.e. generating automatically corner cases for large DNNs. 
-### Missing Pieces
-1. scoring instead of direct tests -- instead of finding exact corner cases, assigning a score of how likely an example is likely to be problematic
-## General Intro Position Blogs
+
+## General Intro Position Papers/ Blogs
 1. (Medium DeepMind Blog)[https://medium.com/@deepmindsafetyresearch/towards-robust-and-verified-ai-specification-testing-robust-training-and-formal-verification-69bd1bc48bdaΩ]
-## Robustness Testing of Deep Learning Models
-1. [General Survey of Testing in ML](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9000651)
+2. [General Survey of Testing in ML](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9000651)
 ### Neuron Coverage Based 
   1. [GrayBox Testing: DeepTest](https://arxiv.org/pdf/1708.08559.pdf) -- Augmentation, Neuron Coverage
   2. [White Box Gradient Based Testing](https://arxiv.org/abs/1705.06640)
