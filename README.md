@@ -21,7 +21,14 @@ DNNs have too many parameters: too many neurons. Manually finding corner cases i
 2. [TensorFuzz](http://proceedings.mlr.press/v97/odena19a/odena19a.pdf)
 3. [DLFuzz](https://arxiv.org/pdf/1808.09413.pdf)
 4. [NeuFuzz](https://wcventure.github.io/FuzzingPaper/Paper/Access19_NeuFuzz%20.pdf)
-## Robustness Testing for NLP Deep Models 
-1. [Robustness Verification for Transformers](https://arxiv.org/pdf/2002.06622.pdf)
-2. [Towards a Robust Deep Neural Network in
+# Testing for NLP Deep Models 
+1. [checklist](https://homes.cs.washington.edu/~marcotcr/acl20_checklist.pdf)
+2. [errudite](https://homes.cs.washington.edu/~marcotcr/acl19_errudite.pdf)
+3.[Semantically Equivalent Adversarial Rules
+for Debugging NLP Models](https://homes.cs.washington.edu/~marcotcr/acl18.pdf)
+3. [Are Red Roses Red?
+Evaluating Consistency of Question-Answering Models](https://homes.cs.washington.edu/~marcotcr/acl19_implication.pdf)
+4. [Robustness Verification for Transformers](https://arxiv.org/pdf/2002.06622.pdf)
+5. [Towards a Robust Deep Neural Network in
 Texts: A Survey](https://arxiv.org/pdf/1902.07285.pdf)
+
