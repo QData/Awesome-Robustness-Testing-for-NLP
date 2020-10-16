@@ -24,10 +24,8 @@ DNNs have too many parameters: too many neurons. Manually finding corner cases i
 # Testing for NLP Deep Models 
 1. [checklist](https://homes.cs.washington.edu/~marcotcr/acl20_checklist.pdf)
 2. [errudite](https://homes.cs.washington.edu/~marcotcr/acl19_errudite.pdf)
-3.[Semantically Equivalent Adversarial Rules
-for Debugging NLP Models](https://homes.cs.washington.edu/~marcotcr/acl18.pdf)
-3. [Are Red Roses Red?Evaluating Consistency of Question-Answering Models](https://homes.cs.washington.edu/~marcotcr/acl19_implication.pdf)
-4. [Robustness Verification for Transformers](https://arxiv.org/pdf/2002.06622.pdf)
-5. [Towards a Robust Deep Neural Network in
-Texts: A Survey](https://arxiv.org/pdf/1902.07285.pdf)
+3. [Semantically Equivalent Adversarial Rules for Debugging NLP Models](https://homes.cs.washington.edu/~marcotcr/acl18.pdf)
+4. [Are Red Roses Red?Evaluating Consistency of Question-Answering Models](https://homes.cs.washington.edu/~marcotcr/acl19_implication.pdf)
+5. [Robustness Verification for Transformers](https://arxiv.org/pdf/2002.06622.pdf)
+6. [Towards a Robust Deep Neural Network in Texts: A Survey](https://arxiv.org/pdf/1902.07285.pdf)
 
