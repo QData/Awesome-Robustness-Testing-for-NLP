@@ -12,12 +12,12 @@ DNNs have too many parameters: too many neurons. Manually finding corner cases i
   2. [White Box Gradient Based Testing](https://arxiv.org/abs/1705.06640)
   3. [DeepCT](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8668044)
   4. [Concolic Testing for Deep Neural Networks](http://qav.comlab.ox.ac.uk/papers/swr+18.pdf)
-  5. [FuzzTesting](https://www.comp.nus.edu.sg/~abhik/pdf/ICSE20_Sensei.pdf) -- Augmentation,
+  5. [FuzzTesting](https://www.comp.nus.edu.sg/~abhik/pdf/ICSE20_Sensei.pdf) -- Augmentation
   6. [Testing Deep Neural Networks- Symbolic Execution](https://arxiv.org/abs/1803.04792)
   7. [MCTS based](https://arxiv.org/abs/1710.07859)
   
 ##### Fuzzing Based 
-1.  [FuzzTesting](https://www.comp.nus.edu.sg/~abhik/pdf/ICSE20_Sensei.pdf) -- Augmentation
+1. [FuzzTesting](https://www.comp.nus.edu.sg/~abhik/pdf/ICSE20_Sensei.pdf) -- Augmentation
 2. [TensorFuzz](http://proceedings.mlr.press/v97/odena19a/odena19a.pdf)
 3. [DLFuzz](https://arxiv.org/pdf/1808.09413.pdf)
 4. [NeuFuzz](https://wcventure.github.io/FuzzingPaper/Paper/Access19_NeuFuzz%20.pdf)
