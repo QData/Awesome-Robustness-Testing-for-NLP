@@ -1,4 +1,6 @@
-# Checklist 
+# Beyond Accuracy: Behavioral Testing of NLP Models with CheckList
+Marco Tulio Ribeiro, Tongshuang Wu, Carlos Guestrin, Sameer Singh
+ACL 2020
 
 ## Summary
 Checklist is a behavioral testing toolkit for NLP models.It provides guidelines in terms of domain specific linguistic capabilities, with corresponding test types/sanity checks. It also includes abstractions to generate large number of test cases directly. 
