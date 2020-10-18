@@ -1,4 +1,6 @@
 # DeepXplore: Automated Whitebox Testing of Deep Learning Systems
+Kexin Pei, Yinzhi Cao, Junfeng Yang, Suman Jana
+SOSP 2017
 ## Summary:
 find incorrect corner case behaviors by maximizing neuron coverage and checking differential behavior by cross referencing multiple models. Uses white box gradient based techniques.
 ## Motivation:
