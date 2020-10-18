@@ -1,5 +1,6 @@
 # Errudite: Scalable, Reproducible, and Testable Error Analysis
-
+Tongshuang Wu, Marco Tulio Ribeiro, Jeffrey Heer, Daniel Weld
+ACL 2019
 ## Summary
 Errudite is an NLP focused Systematic Error Analysis tool. It provides functionalities of defining error hypotheses, 
 extracting test examples following a hypothesis in a scalable way and perturbing inputs in a scalable way for counterfactual analysis. 
