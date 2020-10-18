@@ -5,7 +5,7 @@
 Robustness is a well studied problem, the question is to design models that how to evaluate against strong attacks. RL uses adversarial testing(paper example)[https://arxiv.org/abs/1812.01647]. 
 2. Train the models to be specification consistent 
 
-Specification is some relationhsip that must hold. If this bound is differentiable, propagte this bound through the model. 
+Specification is some relationship that must hold. If this bound is differentiable, propagte this bound through the model. 
 3. How to show that the models are specification consistent: formal verification methods that do not scale well 
 It is impossible to test for Computing bounds on the space of the output.
 
