@@ -1,5 +1,6 @@
 # Concolic Testing for Deep Neural Networks
-
+Youcheng Sun, Min Wu, Wenjie Ruan, Xiaowei Huang, Marta Kwiatkowska, Daniel Kroening
+ASE 2018
 ## Summary 
 concolic testing (combining concrete execution (i.e. testing) with
 symbolic execution) extended to DNNs. 
