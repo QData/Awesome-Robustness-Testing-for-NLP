@@ -1,7 +1,8 @@
-# Tags
-Differential Testing (how to generate tests), Neuron Coverage (measures test effectiveness), White Box Testing, Gradient Based White Box Testing
-# Motivation
-### Goal is to find data points where the DNN is likely to perform bad-- looking for corner cases in a test set
+# DeepXplore: Automated Whitebox Testing of Deep Learning Systems
+## Summary:
+find incorrect corner case behaviors by maximizing neuron coverage and checking differential behavior by cross referencing multiple models. Uses white box gradient based techniques.
+## Motivation:
+Goal is to find data points where the DNN is likely to perform bad-- looking for corner cases in a test set
 
 We need automated testing, i.e. finding corner cases/decision boundary points for DNNs with large number of parameters and neurons, as they are more and more being deployed in real world environments, with large number of unseen data points. 
 What can be such different corner cases?
@@ -19,7 +20,7 @@ What can be such different corner cases?
 1. how to know if a test is good?
 2. How to find corner cases or examples that can serve as good tests -- finding tests automatically 
 
-# Previous Work on testing DNNs
+## Previous Work on testing DNNs
 
 0. Random Testing: Split into train and valid and see how it does on valid :
   a. nothing about internals : may not be a good test after all
@@ -34,7 +35,7 @@ Issue: Unaware of internal DL system, can only cover tiny fraction of all possib
   3. Only cover a small part of the DL system's logic -- measured in terms of neuron coverage
   
   
-# Main Ideas or Key Contributions
+## Main Ideas or Key Contributions
 In terms of mathematical equation --(Desired objective, Warning: this is not the actual objective of the paper )
 
 X_test = argmin_X ImageDiff[X_{orig},  argmax_X(\lambda_c Coverage(X) + \lambda_d DiffPred(X)    )]
@@ -78,8 +79,6 @@ __Other points of note__ :
  
  If succesfully prediction is different : add the example and and run another forward to update the cov tracker 
  Per sample, number of inference procedures: 1(initial class prediction) + k(dnns in obj 2) + 1(update cov tracker)
-## Questions
-are all wrong examples decision boundary examples? Can confidence score be used?
 
 ## Experiments 
 
@@ -102,4 +101,7 @@ column shows the number of seed inputs.
 ### Limitations
 1. Requires multiple DNNs
 2. If same outputs or make the same mistake: useless
+
+# Keywords
+Differential Testing (how to generate tests), Neuron Coverage (measures test effectiveness), White Box Testing, Gradient Based White Box Testing
 
