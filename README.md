@@ -5,7 +5,7 @@ DNNs are modern software being deployed everywhere. Like other software these mu
 DNNs have too many parameters: too many neurons. Manually finding corner cases is too difficult. Need automated testing , i.e. generating automatically corner cases for large DNNs. 
 
 ## General Intro Position Papers/ Blogs
-1. (Medium DeepMind Blog)[https://medium.com/@deepmindsafetyresearch/towards-robust-and-verified-ai-specification-testing-robust-training-and-formal-verification-69bd1bc48bdaΩ]
+1. (Medium DeepMind Blog)[https://medium.com/@deepmindsafetyresearch/towards-robust-and-verified-ai-specification-testing-robust-training-and-formal-verification-69bd1bc48bda]
 2. [General Survey of Testing in ML](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9000651)
 ### Neuron Coverage Based 
   1. [GrayBox Testing: DeepTest](https://arxiv.org/pdf/1708.08559.pdf) -- Augmentation, Neuron Coverage
