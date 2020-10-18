@@ -1,7 +1,9 @@
-# Tags
-Concolic Testing
+# Concolic Testing for Deep Neural Networks
 
-# Motivation
+## Summary 
+concolic testing (combining concrete execution (i.e. testing) with
+symbolic execution) extended to DNNs. 
+## Motivation
 Testing software provides guidance to the user of success in deployment. 
 Concolic Testing fits the DNN case:
 1. high dimensional inputs : random testing can't possibly cover all cases. 
@@ -12,20 +14,20 @@ Hence, **Concolic testing can select certain execution paths based on DNN proper
 
 
 
-# Contributions
+## Contributions
 1. New Coverage criterion: QLAR
 2. concrete execution: Say test set does not satisfy r in R, then find t such that [r(t) - r_0] is minimum , that is closest to finding the test example
 3. symbolic analysis: revise t to t' such that r(t) is desirable. 
 4. Evaluate Test Suite using oracle that measures robustness to adversarial examples, (If the test suite has adversarial examples).
 
-## Briefly Concolic Testing
+### Briefly Concolic Testing
 - A cycle of concrete execution and symbolic analysis till a coverage criterion is met. 
 
 
 
-# Related Work
+## Related Work
 
-# Test Coverage for DNNs
+## Test Coverage for DNNs
 ## Activation patterns to represent execution path 
 Each fixed sample x, results in a specific activation path and this can be encoded using a Linear Programming problem. 
 ## Formalizing Test Coverage Criteria
@@ -73,7 +75,7 @@ heuristic for each requirement: such that r is \delta(r) -- the extent to which 
 
 In detail, solution of min_x a:e returns a such that t \in T, T satisfies e but r(x-->t)<= r(x-->t') t' \in T. All the seed inputs satisfy these conditions
 
-### Heurositcs 
+### Heuristics 
 1. Lipshitz
 FInd the pair that maximizes 
 ||v_1[x_1]-v_1[x_2]|| - c*||x_1 - x_2||
@@ -81,13 +83,13 @@ FInd the pair that maximizes
 -- Convert to maximum coverage additionally weighted by a layer specific constant 
 \delta(NC) = max_x (c_l \sum_unit_l activation_layer_unit_before_relu): true 
 
-Why before relu?
+
 3. SS Coverage for a specific neuron
 
-4. neuron Boundary coverage -- self explanatory (find one closest to boundary )
+4. neuron Boundary coverage -- (find one closest to boundary )
 arg max _ x (u[x] -  h_upper_boundary): true 
 arg max _ x (lower_boundary -  u[x]): true 
-what is true?
+
 
 
 ## Symbolic Generation of Concrete Inputs 
@@ -97,16 +99,15 @@ Three optimizataion algorithms:
 2. global optimization for l_0 norm
 3. new optmization algorithms 
 
-Traditional Symbolic analysis papers:
-
 
 
 ### Linear programming
 1. For Neuron Coverage we desire a neuron to be flipped. Before this, neuron all layers must preserve the activation patterns. 
 ReLU at a point can be converted into linear model 
-2. Rest doesnt matter
-3. How can I activate a neuron if I cant change the activation pattern? Increasing value?
 
 
 
+
+# Keywords
+Concolic Testing
 
